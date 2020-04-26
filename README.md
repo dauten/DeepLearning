@@ -5,26 +5,38 @@ Theoretically, you should be able to load our python notebook into Google Collab
 
 Our "main" code is fairly short, only a couple dozen lines, and most of the work is done in our many many helper functions.  The ones you might want to know are:
 
+```
 def labelconvert(labels, target):
+```
 This helper function formats our labels for binary classification
 
+```
 def train(data, labels, file, user, loud=0):
+```
 This functions trains our CNN with data using labels as the what user we are counting as a match.  The model is saved locally ti file.h5
 
+```
 def evaluate(test,file):
+```
 Given an array of test data and the filename of the model it will return the matrix of our guesses.  For binary classification this is a list of percentages, one for each test email, and the percentage is our confidence that we think that given email is from our targeted user
 
+```
 def fin(filedir, emails, verbose=1):
+```
 This function reads our data in.   emails=number of emails from each user to read in.
 
+```
 def score(evaluation, labels, v):
+```
 This functions takes our data from evaluate and prints it in a more easily digestable form
 
+```
 def getStatsModel(file_name, threshold=0.25):
+```
 This function takes our data saved to disk and performs statistical analysis on it
 
 ## Working With Google Drive
-As we worked in colab, the data we used is currently stored in Google Drive.  You can gain access to our dataset here: https://drive.google.com/drive/folders/1AZryWUTrIoCvF-mwNqw0wUdrXisvtAEt?usp=sharing
+As we worked in colab, the data we used is currently stored in Google Drive.  You can gain access to our dataset [here] (https://drive.google.com/drive/folders/1AZryWUTrIoCvF-mwNqw0wUdrXisvtAEt?usp=sharing)
 You can add this to your own Google Drive.  If you save it under the same name and you're running this in Collab then you shouldn't need to change any code.  If you rename anything you'll need to update the filenames in our "main" (the final block).  Regardless of if you rename it or not, you'll need to connect your Google Drive.  The very first block does this, just click the link and follow the instructions.  Unfortunately, file IO is very slow, taking over an hour to read in all of the training data (on account of the massive amounts of our training data)
 
 ## If Running Locally
