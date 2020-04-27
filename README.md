@@ -46,9 +46,7 @@ If you're running this on a non-Collab machine, you'll need at minimum the follo
 Tensorflow, matplotlib, pandas, collections,  Install using pip, source, or whatever other method you prefer.  It is also strongly recommended to have the appropriate CUDA libraries installed if you plan on training locally otherwise it will take quite a long time.  You also may want to remove the first block (the google collab one) if you plan on reading your files locally.  File IO this way is very fast, taking only a few seconds.
 
 ## Canned Models
-The models we discussed in our report will also be included in our submission in a zipped archive.  You're free to train yourself, but between reading in the data then training this will take a few hours.  If you want to use our models instead you can set the "train_bool" variable in our "main" to 0 and change the lines of code that read
-e=evaluate(data, "/content/drive/My Drive/TEST/Models/SingleCNN/enronsat_"+str(i))
-To whatever path you put the models in.
+The models we discussed in our report will also be included in the same Google Drive folder as our data.  If you want to use these models, you should just be able to hit run all and not need to change any code.  If you want to train them yourself then set the "train_bool" variable in the final block to 1.  You're free to train yourself, but between reading in the data then training this will take a few hours.
 
 ## Evaluation Error
 We've had some runtime related weirdness with evaluating our data.  We can train just fine but we sometimes crash during our evaluation.  The first one almost always works, but after that there's a small chance that our code will halt.  If this happens you can resume evaluation where you left off by following these instructions:
@@ -57,4 +55,6 @@ We've had some runtime related weirdness with evaluating our data.  We can train
 3. Change the range of users to eval.  We default with range(0, 10) for 0-9, if you failed on user 3 set this to range(3, 9)
 4. Run all.
 
+## Contact
+Any issues with running our code should be directed to dauten@siue.edu
 
