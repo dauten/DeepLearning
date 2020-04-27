@@ -1,5 +1,7 @@
 # DeepLearning
 
+[Our notebook can be found online via Google Colab](https://colab.research.google.com/drive/1u6GA0axP2lsY2ozk0VPUU-LCZrf2Aoxk)
+
 ## Overview
 Theoretically, you should be able to load our python notebook into Google Collab, copy our dataset into your drive, hit run all and be good, but our code isn't fool-proof so you may still need to understand a little bit about it to get it to work.  Our model itself is discussed from a high level in our final report and our code has a fair amount of inline comments noting what particular lines do, but I'd like this to be a guide explaining our architecture as a whole.
 
