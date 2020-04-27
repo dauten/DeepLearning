@@ -36,7 +36,7 @@ def getStatsModel(file_name, threshold=0.25):
 This function takes our data saved to disk and performs statistical analysis on it
 
 ## Working With Google Drive
-As we worked in colab, the data we used is currently stored in Google Drive.  You can gain access to our dataset [here](https://drive.google.com/drive/folders/1AZryWUTrIoCvF-mwNqw0wUdrXisvtAEt?usp=sharing)
+As we worked in colab, the data we used is currently stored in Google Drive.  You can gain access to our dataset [here](https://drive.google.com/drive/folders/1AZryWUTrIoCvF-mwNqw0wUdrXisvtAEt?usp=sharing), although the zipped and cleaned dataset is also included in the github repo in case that link doesn't work or you'd rather access the data some other way.  If you don't simply add the above folder to your drive be sure to change the filepaths in the code to wherever you put the data and wherever you want the models saved
 You can add this to your own Google Drive.  If you save it under the same name and you're running this in Collab then you shouldn't need to change any code.  If you rename anything you'll need to update the filenames in our "main" (the final block).  Regardless of if you rename it or not, you'll need to connect your Google Drive.  The very first block does this, just click the link and follow the instructions.  Unfortunately, file IO is very slow, taking over an hour to read in all of the training data (on account of the +28K files in our processed dataset)
 
 ## If Running Locally
